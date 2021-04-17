@@ -12,7 +12,7 @@
   margin: auto;
 }
 *,*::before,*::after{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
     font-family: poppins;
@@ -24,7 +24,8 @@ main{
     
     display: flex;
     flex-wrap: nowrap;
-    background:lightpink;
+    flex-direction: column;
+    background:rgb(248, 209, 215);
     height: 50vh;
     color: #fff;
     align-items: center;
@@ -35,6 +36,11 @@ main{
     font-weight: bold;
     padding:0;
     margin: 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
 }
 main .column-left a{
     display: inline-block;
@@ -133,17 +139,17 @@ h2{
 .footer-left .logo a{
     font-weight: 300;
     font-size: 15px;
-    color: crimson;
+    color: red;
 }
-@media screen and (min-width:100px){
+@media screen and (min-width:600px){
     .footer-right > *{
         flex: 1;
     }
     .footer-left{
-        flex: 1 0px;
+        flex: 0.2;
     }
     .footer-right{
-        flex: 2.0px;
+        flex: 0.8;
     }
     
 }
